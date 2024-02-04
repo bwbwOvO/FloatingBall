@@ -1,0 +1,14 @@
+﻿<!-- 这是 xaml 代码，保存为 PopupWindow.xaml -->
+<Window x:Class="FloatingBall.PopupWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:animatedGif="http://wpfanimatedgif.codeplex.com"
+        Title="提问窗口" Width="350" Height="200">
+    <Grid>
+        <StackPanel Margin="10,10,10,10">
+            <TextBlock x:Name="studentNameText" Text="学生姓名" FontSize="16" HorizontalAlignment="Center"/>
+            <Image Source="/bwbwOvO.jpg" Height="104" Width="100"/>
+            <TextBlock x:Name="countdown" Text="窗口将在 X 秒后自动关关闭." FontSize="16" HorizontalAlignment="Center"/>
+        </StackPanel>
+    </Grid>
+</Window>
