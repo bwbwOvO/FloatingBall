@@ -221,6 +221,20 @@ namespace FloatingBall
             // 显示设置窗口
             settings.Show();
         }
+        private void About_Click(object sender, RoutedEventArgs e)
+        {
+            // 创建一个新的窗口
+            AboutWindow aboutWindow = new AboutWindow();
+
+            // 显示窗口
+            aboutWindow.Show();
+        }
+        // 定义一个菜单项的点击事件的方法
+        private void TuiChu_Click(object sender, RoutedEventArgs e)
+        {
+            // 关闭程序
+            Application.Current.Shutdown();
+        }
 
     }
 }

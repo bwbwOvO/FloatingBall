@@ -53,7 +53,7 @@ namespace FloatingBall
 
                 if (Settings.Default.RepeatMode)
                 {
-                    studentNameText.Text = $"你真幸运宝~{studentName}";
+                    studentNameText.Text = $"你真幸运♥~ >{studentName}< (重复)";
                 }
                 else
                 {
@@ -63,7 +63,7 @@ namespace FloatingBall
                         studentName = SettingsWindow.studentList[index];
                     }
 
-                    studentNameText.Text = $"【自定义文本】{studentName}【自定义文本】";
+                    studentNameText.Text = $"你真幸运♥~ >{studentName}< (不重复)";
                     askedStudents.Add(studentName);
 
                     if (askedStudents.Count == SettingsWindow.studentList.Count)

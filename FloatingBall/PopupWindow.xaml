@@ -7,7 +7,7 @@
     <Grid>
         <StackPanel Margin="10,10,10,10">
             <TextBlock x:Name="studentNameText" Text="学生姓名" FontSize="16" HorizontalAlignment="Center"/>
-            <Image Source="/bwbwOvO.jpg" Height="104" Width="100"/>
+            <Image Source="/有请.jpg" Height="100" Width="100"/>
             <TextBlock x:Name="countdown" Text="窗口将在 X 秒后自动关关闭." FontSize="16" HorizontalAlignment="Center"/>
         </StackPanel>
     </Grid>

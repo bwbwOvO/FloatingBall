@@ -115,8 +115,8 @@ namespace FloatingBall
             settings.Save();
             this.Close();
             // 关闭当前应用程序并启动新的实例
-            System.Diagnostics.Process.Start(Application.ResourceAssembly.Location);
-            Application.Current.Shutdown();
+     //       System.Diagnostics.Process.Start(Application.ResourceAssembly.Location);
+     //       Application.Current.Shutdown();
         }
 
 

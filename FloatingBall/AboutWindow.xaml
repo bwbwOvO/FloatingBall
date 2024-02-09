@@ -1,0 +1,42 @@
+﻿<Window x:Class="FloatingBall.AboutWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="关于" Height="450" Width="800" Background="#2b2b2b">
+    <Window.Resources>
+        <Style x:Key="LinkButtonStyle" TargetType="Button">
+            <Setter Property="Background" Value="Transparent"/>
+            <Setter Property="BorderBrush" Value="Transparent"/>
+            <Setter Property="Foreground" Value="#66c0f4"/>
+            <Setter Property="Cursor" Value="Hand"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <TextBlock Text="{TemplateBinding Content}" TextDecorations="Underline"/>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="222*"/>
+            <RowDefinition Height="Auto" MinHeight="87.76"/>
+            <RowDefinition Height="125*"/>
+        </Grid.RowDefinitions>
+        <Image Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Top" Width="200" Height="200" Source="bwbwOvO.jpg" Margin="0,17,0,0"/>
+        <TextBlock Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" TextWrapping="Wrap" TextAlignment="Center" Foreground="White" Height="31" Width="420">
+            <TextBlock.Inlines>
+                <Run Text="这是一些关于你的软件的文字介绍。在这里添加想要展示的任何信息。"/>
+                <LineBreak/>
+                <Run Text="本项目开源地址：https://github.com/bwbwOvO/FloatingBall"/>
+            </TextBlock.Inlines>
+        </TextBlock>
+        <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center" Height="15" Width="214">
+            <Button Content="Github主页" Tag="https://github.com/bwbwOvO/" Click="Button_Click" Style="{StaticResource LinkButtonStyle}"/>
+            <TextBlock Width="20"/>
+            <Button Content="Steam主页" Tag="https://steamcommunity.com/id/bwbwOvO/" Click="Button_Click" Style="{StaticResource LinkButtonStyle}"/>
+            <TextBlock Width="20"/>
+            <Button Content="我的个人博客" Tag="http://www.baidu.com" Click="Button_Click" Style="{StaticResource LinkButtonStyle}"/>
+        </StackPanel>
+    </Grid>
+</Window>

@@ -11,6 +11,8 @@
 
   <ItemGroup>
     <None Remove="bwbwOvO.jpg" />
+    <None Remove="image\You.png" />
+    <None Remove="有请.jpg" />
   </ItemGroup>
 
   <ItemGroup>
@@ -19,6 +21,7 @@
 
   <ItemGroup>
     <Resource Include="bwbwOvO.jpg" />
+    <Resource Include="有请.jpg" />
   </ItemGroup>
 
   <ItemGroup>
@@ -30,7 +33,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Update="image\U3JCZC9DJ7PKCXZ4%25NH]}_X.gif">
+    <None Update="image\You.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="Properties\Settings.settings">
